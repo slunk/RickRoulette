@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Rick Roulette",
+  "description": "Replaces 25% of all links in pages you visit with links to Rick Astley's classic, \"Never Gonna Give You Up.\"",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["jquery-2.0.3.min.js", "rickroulette.js"]
+    }
+  ],
+
+  "web_accessible_resources": ["jquery-2.0.3.min.map"]
+}
